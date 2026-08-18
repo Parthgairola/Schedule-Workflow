@@ -2,7 +2,7 @@ name: Schedule-Workflow
 
 on:
   schedule:
-    - cron: "20 10 * * *"
+    - cron: "23 10 * * *"
       timezone: "Asia/Kolkata"
 
   workflow_dispatch:
