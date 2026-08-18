@@ -1,0 +1,14 @@
+name: Schedule-Workflow
+
+on: 
+  schedule:
+    - cron: "46 4 * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print Message
+        run: echo "Hi your scheduler ran at appropriate time"
+        
