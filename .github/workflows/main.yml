@@ -1,15 +1,16 @@
 name: Schedule-Workflow
 
-on: 
+on:
   schedule:
     - cron: "20 10 * * *"
       timezone: "Asia/Kolkata"
 
+  workflow_dispatch:
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Print Message
         run: echo "Hi your scheduler ran at appropriate time"
-        
