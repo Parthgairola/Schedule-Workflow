@@ -2,7 +2,8 @@ name: Schedule-Workflow
 
 on: 
   schedule:
-    - cron: "46 4 * * *"
+    - cron: "20 10 * * *"
+      timezone: "Asia/Kolkata"
 
 jobs:
   run-script:
